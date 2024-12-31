@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <title>Online Store page</title>
+  <link rel="stylesheet" href="product1.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbarbg">
+    <h1>LUXECARRY</h1>
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link">Home</a></li>
+            <li class="link-item"><a href="product1.html" class="link">Product</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+        </ul>
+        <button id="cartBtn"><img src="cart.jpg" alt="cart"> (<span id="cartCount">0</span>)</button>
+
+        </nav>
+    
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="product-card" data-id="1">
+      <img src="p9.jpg" alt="CL WALLET">
+      <h2>Celine Wallet</h2>
+      <p>&#8377;8000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="2">
+      <img src="p11.jpg" alt="LV BAGPACK">
+      <h2>Louis Vuitton Bagpack</h2>
+      <p>&#8377;108000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="3">
+      <img src="p10.jpg" alt="MK WALLET">
+      <h2>Michael Kors Wallet</h2>
+      <p>&#8377;13000</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card" data-id="4">
+        <img src="p8.jpg" alt="SlingBag">
+        <h2>Coach Sling bag</h2>
+        <p>&#8377;16000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="5">
+        <img src="p7.jpg" alt="LV Wallet">
+        <h2>Louis Vuitton Wallet</h2>
+        <p>&#8377;50000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="6">
+        <img src="p15.jpg" alt="SLINGBAG">
+        <h2>Gucci SlingBag</h2>
+        <p>&#8377;315000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="7">
+        <img src="p19.jpg" alt="Handbag">
+        <h2>Hermes Kelly Handbag</h2>
+        <p>&#8377;1200000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="8">
+        <img src="p20.jpg" alt="SLINGBAG">
+        <h2>YSL Sling Bag</h2>
+        <p>&#8377;40000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="9">
+        <img src="p18.jpg" alt="BAGPACK">
+        <h2>Versace Bagpack</h2>
+        <p>&#8377;130000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-id="10">
+        <img src="p17.jpg" alt="HANDBAG">
+        <h2>Dior Handbag</h2>
+        <p>&#8377;200000</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: &#8377;<span id="cartTotal">0.00</span></p>
+    <button id="checkoutBtn">Checkout</button>
+    <button id="closeCart">Close</button>
+  </div>
+
+  <script src="product1.js"></script>
+</body>
+</html>
